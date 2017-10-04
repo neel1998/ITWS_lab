@@ -6,5 +6,5 @@ git commit -m "$1"
 git push 
 expect "Username for 'https://www.github.com':"
 send "$user\r"
-expect "password:"
+expect "Password for 'https://www.$user@github.com':"
 send "$pswd"
