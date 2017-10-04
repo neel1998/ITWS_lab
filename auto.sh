@@ -4,4 +4,7 @@ pswd=#abc123
 git add .
 git commit -m "$1"
 git push 
--1 $user -p $pswd
+expect "user:"
+send "$user"
+expect "password:"
+send "$pswd"
